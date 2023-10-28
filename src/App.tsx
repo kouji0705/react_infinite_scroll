@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <div style={{height: '2000px'}}>Scroll down</div>
+      <div style={{height: '2000px'}}>無限スクロール開始</div>
       <div ref={containerRef}>
         {data.map((item: Post) => (
           <div key={item.id}>
