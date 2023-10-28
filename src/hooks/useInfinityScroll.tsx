@@ -3,7 +3,7 @@ import {RefObject, useCallback, useEffect, useState} from 'react';
 const options ={
     root: null, // ルート要素 (viewport) を使用
     rootMargin: '0px',
-    threshold: 1.0, // 要素が完全に表示された場合にコールバックを呼び出す
+    threshold: 0, // 要素が完全に表示された場合にコールバックを呼び出す
 }
 
 export const useInfinityScroll = <T,>(ref: RefObject<HTMLElement | null>, fetch: (page: number) => Promise<T[]>) => {
