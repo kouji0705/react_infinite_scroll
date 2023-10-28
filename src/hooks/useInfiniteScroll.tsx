@@ -6,7 +6,7 @@ const options ={
     threshold: 0, // 要素が少しでもビューポートに表示された瞬間からコールバックが呼び出される
 }
 
-export const useInfinityScroll = <T,>(ref: RefObject<HTMLElement | null>, fetch: (page: number) => Promise<T[]>) => {
+export const useInfiniteScroll = <T,>(ref: RefObject<HTMLElement | null>, fetch: (page: number) => Promise<T[]>) => {
   const [data, setData] = useState<T[]>([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false); // 読み込み中のフラグ

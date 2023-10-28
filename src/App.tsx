@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { useInfinityScroll } from './hooks/useInfinityScroll'
+import { useInfiniteScroll } from './hooks/useInfiniteScroll'
 
 function App() {
   const containerRef = useRef(null);
@@ -10,7 +10,7 @@ function App() {
     return data;
   };
 
-  const data: Post[] = useInfinityScroll(containerRef, fetchData);
+  const data: Post[] = useInfiniteScroll(containerRef, fetchData);
 
   return (
     <div>
