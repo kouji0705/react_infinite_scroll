@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { useInfiniteScroll } from './hooks/useInfiniteScroll'
-import { Post } from './type'
+import { useInfiniteScroll } from '../hooks/useInfiniteScroll'
+import { Post } from '../type'
 
 export function UseInfiniteScrollSample() {
     const containerRef = useRef(null);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { UseInfiniteScrollSample } from './UseInfiniteScrollSample'
+import { UseInfiniteScrollSample } from './components/UseInfiniteScrollSample'
 
 function App() {
   return (
